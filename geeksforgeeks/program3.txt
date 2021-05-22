@@ -1,0 +1,17 @@
+3. Mean And Median of Array 
+def median(self,A,N):
+        
+        A.sort()
+        if(N-1)%2==0:
+            return(A[(N-1)//2])
+        else:
+            return(int((A[N//2-1]+A[N//2])/2))
+            
+        
+        ##Your code here
+        #If median is fraction then convert the median to integer and return
+     
+    #Function to find mean of the array elements.   
+    def mean(self,A,N):
+        return(int(sum(A)/N))
+        ##Your code here
